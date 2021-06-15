@@ -40,6 +40,7 @@ type truck struct {
 	transport
 }
 
+// Concrete Creator
 func newTruck() ITransport {
 	return &truck{
 		transport: transport{
@@ -55,6 +56,7 @@ type ship struct {
 	transport
 }
 
+// Concrete Creator
 func newShip() ITransport {
 	return &ship{
 		transport: transport{
